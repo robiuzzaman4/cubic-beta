@@ -1,0 +1,190 @@
+:root {
+    --base: hsl(238, 21%, 5%);
+    --text: hsl(0, 0%, 100%);
+    --slight: hsl(240, 8%, 66%);
+
+    --focus-low: hsl(238, 3%, 7%);
+    --pink: hsl(306, 60%, 55%);
+
+    --section-padding: 6em;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--base);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* header */
+.header {
+    border-bottom: .1em solid var(--focus-low);
+}
+/* nav */
+.nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: 2em;
+
+    gap: 1em;
+}
+/* nav-brand */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.nav-brand img {
+    width: 2em;
+}
+.nav-brand span {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* menu-icon */
+.menu-icon {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+}
+.menu-icon .menu-icon-img {
+    width: 2em;
+}
+
+/* nav-list */
+.nav-list {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+.nav-active {
+    display: flex;
+}
+.nav-list .nav-item {
+    list-style: none;
+}
+.nav-link {
+    padding: .5em;
+    transition: all .2s ease-in;
+}
+.nav-link:hover {
+    color: var(--pink);
+}
+
+/* nav-btn */
+.btn {
+    padding: .8em 1.5em;
+    border: none;
+    border-radius: .5em;
+    background-color: var(--pink);
+}
+
+
+/* hero section start */
+.hero {
+    padding-block: var(--section-padding);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2em;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: .3em;
+}
+.hero-content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--slight);
+}
+.hero-content {
+    order: 2;
+}
+/* hero section end */
+
+
+
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* nav */
+    .nav {
+        flex-direction: row;
+        align-items: center;
+    }
+    /* menu-btn */
+    .menu-icon {
+        display: none;
+    }
+    /* nav-list */
+    .nav-list {
+        margin-top: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    /* hero section */
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero-content {
+        order: 1;
+    }
+    .hero-img {
+        order: 2;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    
+}
