@@ -5,33 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cubic - Digital Ageancy</title>
-    <!-- css file link -->
+    <!-- CSS FILE LINK -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- google fonts  -->
+    <!-- GOOGLE FONTS LINK  -->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
-    <!-- header start -->
-    <header class="header">
-        <!-- nav start -->
+    <!-- HEADER START -->
+    <header class="header" id="header">
+        <!-- NAV START -->
         <nav class="nav container">
-            <!-- nav btn -->
-            <a href="#" class="nav-brand">
-                <img src="./assets/icon/log.svg" alt="">
+            <!-- NAV BTN -->
+            <a href="index.html" class="nav-brand">
+                <img src="./assets/icon/logo.svg" alt="">
                 <span>Cubic</span>
             </a>
-            <!-- menu btn -->
+            <!-- MENU BTN -->
             <div class="menu-icon" id="menuBtn">
                 <img src="./assets/icon/menu.svg" alt="" class="menu-icon-img">
             </div>
-            <!-- nav list -->
+            <!-- NAV LIST -->
             <ul class="nav-list" id="navList">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
+                    <a href="#about-us" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
+                    <a href="#featured" class="nav-link">featured</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Pricing</a>
@@ -40,33 +42,63 @@
                     <a href="#" class="nav-link">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="btn btn-contact">Contact</a>
+                    <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
-        <!-- nav end -->
+        <!-- NAV END -->
     </header>
-    <!-- header end -->
+    <!-- HEADER END -->
 
-    <!-- main start -->
+    <!-- MAIN START -->
     <main class="main container">
-        <!-- hero section start -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Making Digital Products</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quae accusamus enim ad perferendis repellendus, omnis facere unde impedit in iste perspiciatis eligendi optio recusandae dolore vitae. Adipisci, minus aperiam!</p>
+        <!-- ABOUT SECTION START -->
+        <section class="about" id="about-us">
+            <div class="about-content">
+                <span class="span-wide">Cubic Expert</span>
+                <h1 class="h-1">Making Digital Products</h1>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quae accusamus enim ad perferendis repellendus, omnis facere unde impedit in iste perspiciatis eligendi optio recusandae dolore vitae. Adipisci, minus aperiam!</p>
+                <a href="#" class="btn">Explore Work</a>
             </div>
-            <div class="hero-img">
+            <div class="about-img">
                 <img src="./assets/images/hero.svg" alt="" srcset="">
             </div>
         </section>
-        <!-- hero section end -->
+        <!-- ABOUT SECTION END -->
+
+        <!-- FEATURE SECTION START -->
+        <section class="featured" id="featured">
+            <div class="featured-content">
+                <span class="span-wide">Cubic features</span>
+                <h2 class="h-2">Custom Web Design</h2>
+                <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quae accusamus enim ad perferendis repellendus, omnis facere unde impedit in iste perspiciatis eligendi optio recusandae dolore vitae. Adipisci, minus aperiam!</p>
+                <a href="#" class="btn btn-readmore">Read More</a>
+            </div>
+            <div class="featured-card">
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-swatchbook icon-box-icon"></i>
+                    </div>
+                    <h4 class="h-4">Professional</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, harum.</p>
+                </div>
+                <div class="card">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-bolt icon-box-icon"></i>
+                    </div>
+                    <h4 class="h-4">Fastest</h4>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, harum.</p>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURE SECTION END -->
+
     </main>
-    <!-- main end -->
+    <!-- MAIN END -->
 
 
 
-    <!-- js file link -->
+    <!-- JS FILE LINK -->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
