@@ -71,29 +71,34 @@ img {
 .paragraph {
     font-size: 1em;
     font-weight: 300;
+    line-height: 1.25;
     color: var(--slight);
 }
 .h-1 {
     font-size: 3em;
     font-weight: 700;
+    line-height: 1.3;
 }
 .h-2 {
     font-size: 2.5em;
     font-weight: 700;
+    line-height: 1.2;
 }
 .h-3 {
     font-size: 2em;
     font-weight: 600;
+    line-height: 1.15;
 }
 .h-4 {
     font-size: 1.5em;
     font-weight: 500;
+    line-height: 1.1;
 }
 /* REUSEABLE STYLE END */
 
 /* HEADER START */
 .header {
-    border-bottom: var(--border)
+    border-bottom: var(--border);
 }
 
 /* NAV START */
@@ -162,7 +167,7 @@ img {
 /* HERO SECTION START */
 .about {
     padding-block: var(--padding-block);
-    border-bottom: var(--border);
+    /* border-bottom: var(--border); */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -179,6 +184,33 @@ img {
     order: 2;
 }
 /* HERO SECTION END */
+
+/* STATS SECTION START */
+.state {
+    padding-block-end: var(--padding-block);
+    border-bottom: var(--border);
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.state-item {
+    padding: 2em 4em;
+    /* border: var(--border); */
+    display: grid;
+    gap: 1em;
+    background-color: var(--interface);
+}
+.state-item:nth-child(1) {
+    border-radius: .5em .5em 0 0;
+    border-bottom: var(--border);
+}
+.state-item:nth-child(2) {
+    border-bottom: var(--border);
+}
+.state-item:nth-child(3) {
+    border-radius: 0 0 .5em .5em;
+}
+/* STATS SECTION END */
 
 /* FEATURED SECTION START */
 .featured {
@@ -203,6 +235,7 @@ img {
 }
 .featured-content .btn-readmore:hover {
     background-color: var(--pink);
+    border-color: var(--pink);
 }
 .featured-card {
     height: 100%;
@@ -211,7 +244,6 @@ img {
     background-color: var(--interface);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
 }
 .featured-card .card {
     height: 100%;
@@ -230,12 +262,19 @@ img {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    margin-bottom: .5em;
 }
 .card .icon-box .icon-box-icon {
     font-size: 1.5em;
 }
 /* FEATURED SECTION END */
 
+/* SERVICE SECTION START */
+.service {
+    padding-block: var(--padding-block);
+    border-bottom: var(--border);
+}
+/* SERVICE SECTION END */
 
 /* ===== RESPONSIVE PART ===== */
 
@@ -278,6 +317,24 @@ img {
         order: 2;
     }
     /* HERO SECTION END */
+
+    /* STATS SECTION START */
+    .state {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .state-item:nth-child(1) {
+        border-radius: .5em 0 0 .5em;
+        border-bottom: none;
+        border-right: var(--border);
+    }
+    .state-item:nth-child(2) {
+        border-bottom: none;
+        border-right: var(--border);
+    }
+    .state-item:nth-child(3) {
+        border-radius: 0 .5em .5em 0;
+    }
+    /* STATS SECTION END */
 
     /* FEATURED SECTION START */
     .featured {
